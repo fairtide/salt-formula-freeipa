@@ -153,6 +153,19 @@ Disable LDAP access logs but enable audit
             access: false
             audit: true
 
+Enable IPA server backup
+
+.. code-block:: yaml
+
+    freeipa:
+      server:
+        backup:
+          enabled: true
+          hour: 02
+          minute: 00
+
+For more information about setting backup schedule see https://docs.saltstack.com/en/latest/ref/states/all/salt.states.cron.html.
+
 Read more
 =========
 
