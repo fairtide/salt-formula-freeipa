@@ -2,7 +2,7 @@
 
 {%- if server.get('backup', {}).get('enabled', True) %}
 
-/sbin/ipa-backup:
+/sbin/ipa-backup --data --online:
     cron.present:
       - identifier: freeipa-backup
       - user: root
