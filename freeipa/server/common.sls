@@ -3,6 +3,7 @@
 include:
 - freeipa.common
 - freeipa.server.dns
+- freeipa.server.backup
 {%- if pillar.get('sensu', {}).get('client', {}).get('enabled', False) %}
 - sensu.client
 {%- endif %}
